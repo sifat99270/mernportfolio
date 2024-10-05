@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font awesome cdn include  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- main css file  -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- about section css  -->
+    <link rel="stylesheet" href="./css/about.css" />
+    <!-- skill section css  -->
+    <link rel="stylesheet" href="./css/skill.css" />
+    <!-- project section css  -->
+    <link rel="stylesheet" href="./css/project.css" />
+    <!-- contact section css  -->
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+    <!-- navigation bar  -->
+    <header class="header">
+      <!-- header mobile  -->
+      <div class="header__mobile">
+        <div class="header__mobile-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <!-- click bar close  -->
+        <div id="bar__close"></div>
+        <ul class="header__list">
+          <img
+            class="header__mobile-img"
+            src="./images/sifat.png"
+            alt="logo image"
+          />
+          <span class="header__list-text">MD RIASAD AZIM SIFAT</span>
+          <li class="active">
+            <a href="#about" class="header__mobile-link"
+              ><i class="fa-solid fa-address-card"></i><span>About</span></a
+            >
+          </li>
+          <li>
+            <a href="#skill" class="header__mobile-link"
+              ><i class="fa-solid fa-address-card"></i><span>Skills</span></a
+            >
+          </li>
+          <li>
+            <a href="#project" class="header__mobile-link"
+              ><i class="fa-solid fa-address-card"></i><span>Projects</span></a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="header__mobile-link"
+              ><i class="fa-solid fa-address-book"></i><span>Contact</span></a
+            >
+          </li>
+        </ul>
+        <div class="header__logo">SIFAT</div>
+        <div class="header__mode">
+          <i class="fa-solid fa-sun sun"></i
+          ><i class="fa-solid fa-moon moon"></i>
+        </div>
+      </div>
+
+      <!-- desktop or tab header  -->
+      <div class="header__desktop">
+        <div class="header__information">
+          <div class="header__mode">
+            <i class="fa-solid fa-sun sun"></i
+            ><i class="fa-solid fa-moon moon"></i>
+          </div>
+          <img class="header__img" src="./images/sifat.png" alt="logo image" />
+          <p class="header__name">RA Sifat</p>
+          <p class="header__profession">Web Developer</p>
+          <div class="header__social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+        <div class="header__divider"></div>
+        <ul class="header__list">
+          <li class="active">
+            <a href="#about" class="header__desktop-link"
+              ><i class="fa-solid fa-address-card"></i><span>About</span></a
+            >
+          </li>
+          <li>
+            <a href="#skill" class="header__desktop-link"
+              ><i class="fa-solid fa-address-card"></i><span>Skills</span></a
+            >
+          </li>
+          <li>
+            <a href="#project" class="header__desktop-link"
+              ><i class="fa-solid fa-address-card"></i><span>Projects</span></a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="header__desktop-link"
+              ><i class="fa-solid fa-address-book"></i><span>Contact</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- all contant container  -->
+    <main class="main">
+      <!-- about section  -->
+      <section id="about" class="about">
+        <div class="about__img">
+          <img src="./images/sifat.png" alt="main image" />
+        </div>
+        <div class="about__information">
+          <p class="about__title">HI, I'M A FREELANCER</p>
+          <p class="about__profession">Web Developer</p>
+          <p class="about__para">
+            I'm a software engineer specializing in scalable web apps. Explore
+            my blog, project portfolio and online resume.
+          </p>
+          <div class="about__btn">
+            <a
+              onclick="headerAddActiveClass(3)"
+              href="#contact"
+              class="about__btn-hire"
+              ><i class="fa-solid fa-paper-plane"></i>Hire Me</a
+            >
+            <a href="#" class="about__btn-cv">
+              <i class="fa-solid fa-file"></i>Download CV</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- skill section  -->
+      <section id="skill" class="skill">
+        <p class="skill__title">What I Do</p>
+        <p class="skill__para">
+          I'm a skilled software developer with experience in JavaScript, and
+          expertise in frameworks like React, Node.js, and Next.js. I'm a quick
+          learner and collaborate closely with clients to create efficient,
+          scalable, and user-friendly solutions that solve real-world problems.
+          Let's work together to bring your ideas to life!
+        </p>
+        <div class="skill__cards">
+          <div class="skill__card">
+            <i class="fa-brands fa-react"></i>
+            <p class="skill__card-profession">
+              React<br /><span>Frontend</span>
+            </p>
+          </div>
+          <div class="skill__card">
+            <i class="fa-solid fa-code"></i>
+            <p class="skill__card-profession">
+              Next Js<br /><span>Forntend and Backend</span>
+            </p>
+          </div>
+          <div class="skill__card">
+            <i class="fa-brands fa-node"></i>
+            <p class="skill__card-profession">
+              Node Js<br/ > <span>Backend</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- project section  -->
+      <section id="project" class="project">
+        <p class="project__title">My Projects</p>
+        <p class="project__para">
+          Following projects showcases my skills and experience through
+          real-world examples of my work. Each project is briefly described with
+          links to code repositories and live demos in it. It reflects my
+          ability to solve complex problems, work with different technologies,
+          and manage projects effectively.
+        </p>
+        <div class="project__cards">
+          <div class="project__card">
+            <img
+              class="project__card-img"
+              src="./images/carrent.png"
+              alt="project image"
+            />
+            <p class="project__name">Agency Application</p>
+            <p class="project__card-des">
+              Web-based platform that allows users to search, book, and manage
+              car rentals from various providers, providing a convenient and
+              efficient solution for transportation needs.
+            </p>
+          </div>
+          <div class="project__card">
+            <img
+              class="project__card-img"
+              src="./images/ecommerce.png"
+              alt="project image"
+            />
+            <p class="project__name">Ecommerce Application</p>
+            <p class="project__card-des">
+              Web-based platform that allows users to search, book, and manage
+              car rentals from various providers, providing a convenient and
+              efficient solution for transportation needs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section  -->
+      <section id="contact" class="contact">
+        <p class="contact__title">Contact Details</p>
+        <p class="contact__para">
+          If you are going to use a passage of Lorem Ipsum, you need to be sure
+          there isn't anything embarrassing hidden in the middle of text.
+        </p>
+        <div class="contact__info">
+          <div class="contact__info-card">
+            <i class="fa-solid fa-mobile"></i>
+            <div><span>Phone</span><span>+880132817</span></div>
+          </div>
+          <div class="contact__info-card">
+            <i class="fa-solid fa-envelope"></i>
+            <div><span>Email</span><span>rasifat33@gmail.com</span></div>
+          </div>
+          <div class="contact__info-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <div><span>Loaction</span><span>Rangpur Nilphamari</span></div>
+          </div>
+        </div>
+        <p class="contact__title">Send Message</p>
+        <p class="contact__para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat non
+          repellendus ex, assumenda quos dignissimos obcaecati quasi laudantium
+          odio repellat!
+        </p>
+        <form class="contact__form">
+          <div class="contact__form-input">
+            <i class="fa-solid fa-signature"></i>
+            <input type="text" placeholder="your name" />
+          </div>
+          <div class="contact__form-input">
+            <i class="fa-solid fa-mobile"></i>
+            <input type="text" placeholder="your number" />
+          </div>
+          <div class="contact__form-input">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="your loacation" />
+          </div>
+          <div class="contact__form-input">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="text" placeholder="your email" />
+          </div>
+
+          <textarea
+            class="contact__from-textarea"
+            placeholder="enter your message"
+          ></textarea>
+
+          <button class="contact__button" type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- include jsvascript file  -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

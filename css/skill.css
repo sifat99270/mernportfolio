@@ -1,0 +1,67 @@
+.main .skill {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .skill .skill__title {
+  font-weight: 800;
+  font-size: 40px;
+  color: var(--text-color);
+  position: relative;
+  padding: 0 4px;
+}
+.main .skill .skill__title::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  top: 0;
+  left: -6px;
+  background: var(--main-color);
+}
+.main .skill .skill__para {
+  font-weight: 500;
+  color: var(--secondary-text);
+  text-align: justify;
+  padding: 0 4px;
+}
+.main .skill .skill__cards {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.main .skill .skill__cards .skill__card {
+  width: 45%;
+  background: var(--card);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: 2px 2px 10px var(--shadow);
+  border: 1px solid var(--divider);
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.main .skill .skill__cards .skill__card i {
+  font-size: 50px;
+  color: var(--main-color);
+}
+.main .skill .skill__cards .skill__card .skill__card-profession {
+  font-weight: 500;
+  color: var(--secondary-text);
+  text-align: center;
+}
+.main .skill .skill__cards .skill__card .skill__card-profession span {
+  font-weight: bold;
+  color: var(--main-color);
+  font-size: 12px;
+}
+@media screen and (min-width: 600px) {
+  .main .skill .skill__cards .skill__card {
+    width: 200px;
+  }
+}

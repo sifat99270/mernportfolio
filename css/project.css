@@ -1,0 +1,66 @@
+.main .project {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .project .project__title {
+  font-weight: 800;
+  font-size: 40px;
+  color: var(--text-color);
+  position: relative;
+  padding: 0 4px;
+}
+.main .project .project__title::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  top: 0;
+  left: -6px;
+  background: var(--main-color);
+}
+.main .project .project__para {
+  font-weight: 500;
+  color: var(--secondary-text);
+  text-align: justify;
+  padding: 0 4px;
+}
+.main .project .project__cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.main .project .project__cards .project__card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--card);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 10px var(--shadow);
+}
+.main .project .project__cards .project__card .project__card-img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.main .project .project__cards .project__card .project__name {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--main-color);
+}
+.main .project .project__cards .project__card .project__card-des {
+  color: var(--secondary-text);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: justify;
+}
+@media screen and (min-width: 660px) {
+  .main .project .project__cards .project__card {
+    width: 300px;
+  }
+}
